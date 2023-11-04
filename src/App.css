@@ -1,0 +1,99 @@
+/* .image-slider */
+.image-slider {
+  position: relative;
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%; /* Make the slider responsive */
+}
+
+/* .image */
+.image {
+  width: 28.125rem;
+  height: 18.75rem;
+  border-radius: 0.75rem;
+  max-width: 100%; /* Make the images responsive */
+}
+
+/* .left */
+.left {
+  position: absolute;
+  left: 1.875rem;
+  top: 50%;
+  font-size: 1rem;
+  color: blue;
+  z-index: 5;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* .right */
+.right {
+  position: absolute;
+  right: 1.875rem;
+  top: 50%;
+  font-size: 2rem;
+  color: blue;
+  z-index: 5;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* .currentSlide */
+.currentSlide {
+  transition-duration: 0.5s ease;
+  opacity: 0;
+  max-width: 100%; /* Make the slide responsive */
+}
+
+/* .currentSlide.active */
+.currentSlide.active {
+  opacity: 1;
+  transition-duration: 0.5s;
+  transform: scale(1.2);
+}
+
+/* .title */
+.title {
+  padding: 1rem;
+  text-align: center;
+  color: #007bff;
+  font-size: 2.25rem;
+}
+
+/* .indicator */
+.indicator {
+  text-align: center;
+  margin-top: 0.625rem;
+}
+
+/* Styling for the dots in the image slider indicator */
+.dot {
+  width: 0.625rem;
+  height: 0.625rem;
+  background-color: #888;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 0.3125rem;
+  cursor: pointer;
+}
+
+/* Styling for the active dot in the image slider indicator */
+.active-dot {
+  width: 0.625rem;
+  height: 0.625rem;
+  background-color: #007bff;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 0.3125rem;
+  cursor: pointer;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .currentSlide{
+    max-width: 60%;
+    max-height: 60%;
+  }
+}
