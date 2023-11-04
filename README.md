@@ -20,8 +20,9 @@ npm start
 ### Note
 
 - You can set duration for auto-slide in 'App.jsx' by changing the attribute 'autoSlideInterval' in milliseconds.
+
 3000 milliseconds = 3 seconds.
 
 - You can also remove auto-slide functionality by removing 'autoSlideInterval' attribute and reload browser to see changes.
 
-- If you want auto-slide back, replace <ImageSlider .../> component in 'App.jsx' with '<ImageSlider sliderImages={sliderImages} autoSlideInterval={3000} />'.
+- If you want auto-slide back, replace <ImageSlider .../> component in 'App.jsx' with <ImageSlider sliderImages={sliderImages} autoSlideInterval={3000} />.
