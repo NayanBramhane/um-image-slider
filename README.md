@@ -25,4 +25,8 @@ npm start
 
 - You can also remove auto-slide functionality by removing 'autoSlideInterval' attribute and reload browser to see changes.
 
-- If you want auto-slide back, replace <ImageSlider .../> component in 'App.jsx' with <ImageSlider sliderImages={sliderImages} autoSlideInterval={3000} />.
+- If you want auto-slide back, replace <ImageSlider .../> component in 'App.jsx' with
+
+```shell
+<ImageSlider sliderImages={sliderImages} autoSlideInterval={3000} />
+```
