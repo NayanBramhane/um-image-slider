@@ -12,7 +12,7 @@ This Image Slider is made using ReactJS and Vite.
 - clone this repo
 
 ```shell
-cd image slider
+cd um-image-slider
 npm install
 npm start
 ```
